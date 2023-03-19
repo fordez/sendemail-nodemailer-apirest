@@ -19,13 +19,13 @@ app.post('/send-email', async (req, res, next) => {
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'fordezdeveloper@gmail.com',
-      pass: 'vznkyoiqtzytfvpy'
+      user: 'email',
+      pass: 'configurar pass'
     }
   });
 
   const mailOptions = {
-    from: 'fordezdeveloper@gmail.com',
+    from: 'email',
     to,
     subject,
     text
